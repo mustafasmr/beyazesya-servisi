@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Beyaz Eşya Servisi",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "142"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Ayşe K."
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      },
+      "reviewBody": "Çok hızlı ve profesyonel bir hizmet aldım, teşekkür ederim."
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Ana Sayfa",
+      "item": "https://www.sumerteknikservis.com/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Hizmetlerimiz",
+      "item": "https://www.sumerteknikservis.com/hizmetler.html"
+    }
+  ]
+}
+</script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="dynamic-title">Hizmet Detayı | Sümer Teknik Servis</title>
+  <meta name="description" content="" id="dynamic-desc">
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; line-height: 1.6; }
+    header, footer { background: #003366; color: #fff; padding: 1em; text-align: center; }
+    nav a { margin: 0 10px; color: #fff; text-decoration: none; font-weight: bold; }
+    .content { padding: 2em; max-width: 900px; margin: auto; }
+    footer a { color: #fff; margin: 0 10px; text-decoration: none; }
+    @media (max-width: 768px) {
+      nav a, footer a { display: block; margin: 5px 0; }
+      .content { padding: 1em; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Sümer Teknik Servis</h1>
+    <nav>
+      <a href="index.html">Ana Sayfa</a>
+      <a href="hizmetler.html">Hizmetlerimiz</a>
+      <a href="hakkimizda.html">Hakkımızda</a>
+      <a href="iletisim.html">İletişim</a>
+    </nav>
+  </header>
+
+  <section class="content">
+    <h2 id="service-title">Hizmet Başlığı</h2>
+    <p id="service-desc">Bu sayfa dinamik olarak yüklenecektir...</p>
+
+    <div id="extra">
+      <p>Deneyimli teknisyenlerimiz ile <strong id="service-keyword">servis</strong> konusunda hızlı, güvenilir ve ekonomik çözümler sunuyoruz.</p>
+      <p>Bize ulaşmak için <a href="tel:05551234567">0555 123 45 67</a> numaralı telefonu arayabilirsiniz.</p>
+    </div>
+
+    <p style="margin-top: 20px; font-size: 0.9em;"><strong>Not:</strong> Firmamız <strong>yetkili servis değildir</strong>. Garantisi bitmiş cihazlara hizmet verilmektedir.</p>
+  </section>
+
+  <footer>
+    <div>
+      <a href="index.html">Ana Sayfa</a>
+      <a href="hizmetler.html">Hizmetlerimiz</a>
+      <a href="hakkimizda.html">Hakkımızda</a>
+      <a href="iletisim.html">İletişim</a>
+      <a href="gizlilik.html">Gizlilik Politikası</a>
+      <a href="kvkk.html">KVKK</a>
+    </div>
+    <p style="margin-top: 1em; font-size: 0.9em;">Yetkili servis değiliz. Garantisi olmayan ürünler için hizmet verilmektedir.</p>
+    <p style="font-size: 0.8em;">© 2025 Sümer Teknik Servis</p>
+  </footer>
+
+  <script>
+    // Parametreyi al
+    const urlParams = new URLSearchParams(window.location.search);
+    const service = urlParams.get('service');
+
+    if (service) {
+      const decodedService = decodeURIComponent(service.replace(/\+/g, ' '));
+      document.getElementById('dynamic-title').innerText = `${decodedService} | Sümer Teknik Servis`;
+      document.getElementById('service-title').innerText = decodedService;
+      document.getElementById('service-keyword').innerText = decodedService.toLowerCase();
+      document.getElementById('service-desc').innerText = `${decodedService} ile ilgili teknik servis, arıza giderme ve bakım hizmetleri Sümer Teknik Servis tarafından sunulmaktadır.`;
+      document.getElementById('dynamic-desc').setAttribute('content', `${decodedService} tamiri, bakımı ve arıza servisi için uzman teknik destek.`);
+    }
+  </script>
+
+</body>
+</html>
+
+<section class="content">
+  <h3>Müşteri Yorumları</h3>
+  <div style="background:#f8f8f8; padding:1em; border-radius:5px;">
+    <p><strong>Ayşe K. - Ankara:</strong> Buzdolabım bozulmuştu, 1 saatte gelip hallettiler. Teşekkür ederim.</p>
+    <p><strong>Mustafa D. - Keçiören:</strong> Klima servisi konusunda çok iyiler. Fiyatlar da uygun.</p>
+    <p><strong>Gülcan T. - Etimesgut:</strong> Çamaşır makinesi çalışmıyordu. Sorunu hemen çözdüler.</p>
+    <p><strong>Oğuzhan B. - Sincan:</strong> Kombi bakımı için tercih ettim, gayet memnun kaldım.</p>
+    <p><strong>Emine A. - Çankaya:</strong> Çok profesyoneller, her soruma yanıt verdiler.</p>
+    <p><strong>Serkan Y. - Mamak:</strong> Televizyonum için geldiler, titizlikle çalıştılar.</p>
+    <p><strong>Nilay K. - Batıkent:</strong> Hizmet hızlı ve güvenilir. Tavsiye ederim.</p>
+    <p><strong>Murat S. - Yenimahalle:</strong> Fırın için servis çağırdım, aynı gün geldiler.</p>
+    <p><strong>Fatma G. - Altındağ:</strong> Sürekli bu servisi kullanıyorum. Hiç sıkıntı yaşamadım.</p>
+    <p><strong>Ali Rıza T. - Pursaklar:</strong> Garantisi bitmiş kombi için çok ekonomik çözüm sundular.</p>
+  </div>
+</section>
